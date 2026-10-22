@@ -1,0 +1,22 @@
+{
+  "name": "rasa-bandung",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i src/input.css -o css/style.css --minify",
+    "tailwind": "tailwindcss -i src/input.css -o css/style.css --watch",
+    "serve": "live-server --port=3000 --open=index.html --ignore=node_modules,src --watch=index.html,css,js,img",
+    "dev": "concurrently \"npm run tailwind\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17",
+    "live-server": "^1.2.2",
+    "concurrently": "^9.1.0"
+  },
+  "private": "true"
+}

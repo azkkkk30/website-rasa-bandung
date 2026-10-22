@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rasa Bandung | Kuliner Bandung Enak, Harga Pas Uang Saku Mahasiswa</title>
+<meta name="description" content="Temukan tempat makan di Bandung seharga Rp25.000–Rp50.000 lengkap dengan lokasi, jam buka, dan ulasan. Cocok untuk makan harian dan nongkrong bareng teman.">
+<meta name="theme-color" content="#C2410C">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta property="og:title" content="Rasa Bandung | Kuliner Bandung Enak, Harga Pas Uang Saku Mahasiswa">
+<meta property="og:description" content="Tempat makan Rp25.000–Rp50.000 di Bandung, lengkap dengan lokasi, jam buka, dan ulasan.">
+<meta property="og:image" content="img/hero-makanan.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23C2410C'/%3E%3Cpath d='M20 14v14a6 6 0 0 0 4 5.6V50h4V33.6A6 6 0 0 0 32 28V14h-3v10h-2V14h-3v10h-2V14zM44 14c-4 3-6 8-6 14 0 3 1 5 3 6v16h4V14z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Ikon (sprite) -->
+<svg width="0" height="0" class="absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20 12l-8 8-9-9V3h8z"/><circle cx="7.5" cy="7.5" r="1.5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8a3 3 0 016 0"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+</svg>
+
+<a href="#konten" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-ink focus:px-4 focus:py-3 focus:text-white">Lewati ke konten utama</a>
+
+<!-- 01 NAV -->
+<header class="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
+  <div class="mx-auto flex h-16 max-w-[1200px] items-center justify-between gap-6 px-5 lg:h-[76px] lg:px-10">
+    <a href="#beranda" class="flex items-center gap-3" aria-label="Rasa Bandung, ke atas">
+      <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-brand text-white" aria-hidden="true">
+        <svg viewBox="0 0 64 64" class="h-6 w-6 fill-current"><path d="M20 14v14a6 6 0 0 0 4 5.6V50h4V33.6A6 6 0 0 0 32 28V14h-3v10h-2V14h-3v10h-2V14zM44 14c-4 3-6 8-6 14 0 3 1 5 3 6v16h4V14z"/></svg>
+      </span>
+      <span class="text-lg font-extrabold">Rasa Bandung</span>
+    </a>
+    <nav aria-label="Navigasi utama" class="hidden items-center gap-8 text-[15px] font-semibold text-[#3B3B37] lg:flex">
+      <a href="#keunggulan" class="hover:text-brand">Keunggulan</a>
+      <a href="#testimoni" class="hover:text-brand">Testimoni</a>
+      <a href="#fitur" class="hover:text-brand">Fitur</a>
+      <a href="#faq" class="hover:text-brand">FAQ</a>
+    </nav>
+    <a href="#kontak" class="btn btn-primary hidden !min-h-[44px] !px-5 !py-2.5 !text-[15px] lg:inline-flex">Cari Tempat Makan</a>
+    <button type="button" id="menu-btn" class="flex h-11 w-11 items-center justify-center rounded-[10px] border border-line lg:hidden" aria-label="Buka menu" aria-expanded="false" aria-controls="menu-mobile">
+      <svg class="h-[22px] w-[22px] fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-menu" id="menu-icon"/></svg>
+    </button>
+  </div>
+  <nav id="menu-mobile" aria-label="Navigasi seluler" class="hidden border-t border-line bg-white px-5 pb-5 pt-2 lg:hidden">
+    <ul class="flex flex-col text-base font-semibold">
+      <li><a href="#keunggulan" class="block py-3">Keunggulan</a></li>
+      <li><a href="#testimoni" class="block py-3">Testimoni</a></li>
+      <li><a href="#fitur" class="block py-3">Fitur</a></li>
+      <li><a href="#faq" class="block py-3">FAQ</a></li>
+    </ul>
+    <a href="#kontak" class="btn btn-primary mt-2 w-full">Cari Tempat Makan</a>
+  </nav>
+</header>
+
+<main id="konten">
+
+<!-- 02 HERO -->
+<section id="beranda" class="bg-canvas">
+  <div class="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-10 px-5 pb-12 pt-8 lg:grid-cols-2 lg:gap-14 lg:px-10 lg:pb-[88px] lg:pt-[72px]">
+    <div>
+      <span class="tag">Kuliner Bandung untuk Mahasiswa</span>
+      <h1 class="mt-4 text-[34px] font-extrabold leading-[1.12] tracking-[-0.03em] sm:text-5xl lg:mt-5 lg:text-[60px] lg:leading-[1.08]">Kuliner Bandung Enak, Harga Pas Uang Saku Mahasiswa</h1>
+      <p class="mt-4 max-w-[540px] text-[17px] leading-relaxed text-muted lg:mt-5 lg:text-xl">Temukan tempat makan Rp25.000–Rp50.000 lengkap dengan lokasi, jam buka, dan ulasan. Tanpa bolak-balik buka banyak aplikasi.</p>
+      <div class="mt-6 flex flex-col gap-3 sm:flex-row lg:mt-8">
+        <a href="#kontak" class="btn btn-primary lg:!min-h-[56px] lg:!px-8 lg:!text-[17px]" data-cta="hero-utama">Lihat Rekomendasi Sekarang</a>
+        <a href="https://www.google.com/maps/search/kuliner+murah+terdekat" target="_blank" rel="noopener noreferrer" class="btn btn-outline lg:!min-h-[56px] lg:!text-[17px]" data-cta="hero-terdekat">Cari yang Terdekat<span class="sr-only"> (buka di Google Maps, tab baru)</span></a>
+      </div>
+      <p class="mt-5 flex items-start gap-2.5 text-sm text-muted lg:text-[15px]">
+        <svg class="mt-0.5 h-5 w-5 shrink-0 fill-none stroke-current" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg>
+        Cocok untuk makan harian maupun nongkrong bareng teman
+      </p>
+    </div>
+
+    <div class="relative">
+      <img src="img/hero-makanan.jpg" width="556" height="484" alt="Meja penuh hidangan kuliner untuk makan bareng teman: pasta, kentang goreng, onion ring, dan minuman" class="aspect-[556/484] w-full rounded-2xl object-cover lg:aspect-auto lg:h-[500px]" fetchpriority="high">
+      <form id="form-cari" class="mt-4 rounded-[14px] border border-line bg-white p-4 shadow-card lg:absolute lg:inset-x-5 lg:bottom-5 lg:mt-0 lg:p-[18px]" role="search" aria-label="Cari kuliner">
+        <label for="cari" class="block text-base font-bold">Mau makan apa hari ini?</label>
+        <div class="mt-2.5 flex items-center gap-2.5 rounded-[10px] border-[1.5px] border-[#A8A8A2] bg-white px-3.5 focus-within:border-ink">
+          <svg class="h-5 w-5 shrink-0 fill-none stroke-soft" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-search"/></svg>
+          <input id="cari" name="cari" type="search" autocomplete="off" placeholder="Cari kuliner murah" class="min-h-[46px] min-w-0 flex-1 bg-transparent text-base placeholder:text-[#767670] focus:outline-none">
+          <button type="submit" class="my-1.5 rounded-lg bg-brand px-4 py-2 text-sm font-bold text-white hover:bg-brand-dark">Cari</button>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2" role="group" aria-label="Filter cepat">
+          <button type="button" class="chip" aria-pressed="true" data-chip="Rp25–50rb">Rp25–50rb</button>
+          <button type="button" class="chip" aria-pressed="false" data-chip="Malam">Malam</button>
+          <button type="button" class="chip" aria-pressed="false" data-chip="Kaki lima">Kaki lima</button>
+          <button type="button" class="chip" aria-pressed="false" data-chip="Terdekat">Terdekat</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 03 VALUE PROPOSITION -->
+<section id="keunggulan" class="bg-white py-14 lg:py-[88px]">
+  <div class="mx-auto max-w-[1200px] px-5 lg:px-10">
+    <div class="mx-auto max-w-[720px] lg:text-center">
+      <span class="tag">Keunggulan</span>
+      <h2 class="mt-3.5 text-[28px] font-extrabold leading-[1.18] tracking-[-0.02em] lg:mt-4 lg:text-[40px] lg:leading-[1.15]">Kenapa Mahasiswa Bandung Cari Makan di Sini</h2>
+      <p class="mt-2.5 text-base text-muted lg:mt-3 lg:text-lg">Tiga hal yang paling sering bikin bingung saat cari tempat makan, kami rapikan jadi satu.</p>
+    </div>
+    <ul class="mt-7 grid gap-4 lg:mt-12 lg:grid-cols-3 lg:gap-6">
+      <li class="flex gap-4 rounded-[14px] border border-line p-5 lg:block lg:p-8">
+        <span class="icon-box h-11 w-11 rounded-full lg:h-[52px] lg:w-[52px]"><svg class="h-[22px] w-[22px] fill-none stroke-current lg:h-6 lg:w-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-tag"/></svg></span>
+        <div>
+          <h3 class="text-lg font-bold leading-snug lg:mt-5 lg:text-[22px]">Harga Jelas, Sesuai Uang Saku</h3>
+          <p class="mt-1.5 text-[15px] text-muted lg:mt-2.5 lg:text-base">Setiap tempat punya kisaran harga yang mudah dicek, dan bisa difilter ke Rp25.000–Rp50.000 per sekali makan.</p>
+        </div>
+      </li>
+      <li class="flex gap-4 rounded-[14px] border border-line p-5 lg:block lg:p-8">
+        <span class="icon-box h-11 w-11 rounded-full lg:h-[52px] lg:w-[52px]"><svg class="h-[22px] w-[22px] fill-none stroke-current lg:h-6 lg:w-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-pin"/></svg></span>
+        <div>
+          <h3 class="text-lg font-bold leading-snug lg:mt-5 lg:text-[22px]">Dekat Kampus dan Kos</h3>
+          <p class="mt-1.5 text-[15px] text-muted lg:mt-2.5 lg:text-base">Lihat jarak, lokasi, dan jam buka sebelum berangkat, jadi tidak ada lagi datang ke tempat yang sudah tutup.</p>
+        </div>
+      </li>
+      <li class="flex gap-4 rounded-[14px] border border-line p-5 lg:block lg:p-8">
+        <span class="icon-box h-11 w-11 rounded-full lg:h-[52px] lg:w-[52px]"><svg class="h-[22px] w-[22px] fill-none stroke-current lg:h-6 lg:w-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-chat"/></svg></span>
+        <div>
+          <h3 class="text-lg font-bold leading-snug lg:mt-5 lg:text-[22px]">Ulasan dalam Satu Tempat</h3>
+          <p class="mt-1.5 text-[15px] text-muted lg:mt-2.5 lg:text-base">Rating, foto menu, dan ulasan terbaru dirangkum di satu halaman, tanpa pindah-pindah aplikasi.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 04 SOCIAL PROOF -->
+<section id="testimoni" class="bg-canvas py-14 lg:py-[88px]">
+  <div class="mx-auto max-w-[1200px] px-5 lg:px-10">
+    <div class="mx-auto max-w-[720px] lg:text-center">
+      <span class="tag">Testimoni</span>
+      <h2 class="mt-3.5 text-[28px] font-extrabold leading-[1.18] tracking-[-0.02em] lg:mt-4 lg:text-[40px] lg:leading-[1.15]">Kata Mahasiswa yang Sudah Coba</h2>
+    </div>
+    <div class="mt-6 grid grid-cols-3 gap-2 text-center lg:mt-10 lg:gap-6">
+      <p><span class="block text-2xl font-extrabold leading-tight lg:text-[44px]">150+</span><span class="block text-xs text-muted lg:mt-1 lg:text-base">tempat makan terkurasi</span></p>
+      <p><span class="block text-2xl font-extrabold leading-tight lg:text-[44px]">12rb</span><span class="block text-xs text-muted lg:mt-1 lg:text-base">pengunjung tiap bulan</span></p>
+      <p><span class="block text-2xl font-extrabold leading-tight lg:text-[44px]">4,8/5</span><span class="block text-xs text-muted lg:mt-1 lg:text-base">rating kepuasan pengguna</span></p>
+    </div>
+  </div>
+  <ul class="no-scrollbar mt-7 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 lg:mx-auto lg:mt-10 lg:grid lg:max-w-[1200px] lg:grid-cols-3 lg:gap-6 lg:overflow-visible lg:px-10" tabindex="0" aria-label="Testimoni pengguna, geser untuk melihat lainnya">
+    <li class="w-[300px] shrink-0 snap-start lg:w-auto">
+      <figure class="h-full rounded-[14px] border border-line bg-white p-[22px] lg:p-7">
+        <div class="flex gap-[3px] text-ink" role="img" aria-label="Rating 5 dari 5">
+          <svg class="h-4 w-4 fill-current lg:h-[18px] lg:w-[18px]" aria-hidden="true"><use href="#i-star"/></svg><svg class="h-4 w-4 fill-current lg:h-[18px] lg:w-[18px]" aria-hidden="true"><use href="#i-star"/></svg><svg class="h-4 w-4 fill-current lg:h-[18px] lg:w-[18px]" aria-hidden="true"><use href="#i-star"/></svg><svg class="h-4 w-4 fill-current lg:h-[18px] lg:w-[18px]" aria-hidden="true"><use href="#i-star"/></svg><svg class="h-4 w-4 fill-current lg:h-[18px] lg:w-[18px]" aria-hidden="true"><use href="#i-star"/></svg>
+        </div>
+        <blockquote class="my-3 text-base text-[#2E2E2B] lg:my-4 lg:text-[17px]">“Menemukan tempat makan enak dan murah tanpa lama mencari.”</blockquote>
+        <figcaption class="flex items-center gap-3">
+          <span class="flex h-10 w-10 items-center justify-center rounded-full bg-ph text-sm font-bold text-soft lg:h-11 lg:w-11" aria-hidden="true">FY</span>
+          <span><span class="block text-[15px] font-bold lg:text-base">Farid Yogaswara</span><span class="block text-[13px] text-soft lg:text-sm">UIN Sunan Gunung Djati, Bandung</span></span>
+        </figcaption>
+      </figure>
+    </li>
+    <li class="w-[300px] shrink-0 snap-start lg:w-auto">
+      <figure class="h-full rounded-[14px] border border-line bg-white p-[22px] lg:p-7">
+        <div class="flex gap-[3px] text-ink" role="img" aria-label="Rating 5 dari 5">
+          <svg class="h-4 w-4 fill-current lg:h-[18px] lg:w-[18px]" aria-hidden="true"><use href="#i-star"/></svg><svg class="h-4 w-4 fill-current lg:h-[18px] lg:w-[18px]" aria-hidden="true"><use href="#i-star"/></svg><svg class="h-4 w-4 fill-current lg:h-[18px] lg:w-[18px]" aria-hidden="true"><use href="#i-star"/></svg><svg class="h-4 w-4 fill-current lg:h-[18px] lg:w-[18px]" aria-hidden="true"><use href="#i-star"/></svg><svg class="h-4 w-4 fill-current lg:h-[18px] lg:w-[18px]" aria-hidden="true"><use href="#i-star"/></svg>
+        </div>
+        <blockquote class="my-3 text-base text-[#2E2E2B] lg:my-4 lg:text-[17px]">“Info harga dan jam buka jelas, tidak perlu cek banyak aplikasi.”</blockquote>
+        <figcaption class="flex items-center gap-3">
+          <span class="flex h-10 w-10 items-center justify-center rounded-full bg-ph text-sm font-bold text-soft lg:h-11 lg:w-11" aria-hidden="true">SF</span>
+          <span><span class="block text-[15px] font-bold lg:text-base">Satria Fajar</span><span class="block text-[13px] text-soft lg:text-sm">UNPAD, Bandung</span></span>
+        </figcaption>
+      </figure>
+    </li>
+    <li class="w-[300px] shrink-0 snap-start lg:w-auto">
+      <figure class="h-full rounded-[14px] border border-line bg-white p-[22px] lg:p-7">
+        <div class="flex gap-[3px] text-ink" role="img" aria-label="Rating 5 dari 5">
+          <svg class="h-4 w-4 fill-current lg:h-[18px] lg:w-[18px]" aria-hidden="true"><use href="#i-star"/></svg><svg class="h-4 w-4 fill-current lg:h-[18px] lg:w-[18px]" aria-hidden="true"><use href="#i-star"/></svg><svg class="h-4 w-4 fill-current lg:h-[18px] lg:w-[18px]" aria-hidden="true"><use href="#i-star"/></svg><svg class="h-4 w-4 fill-current lg:h-[18px] lg:w-[18px]" aria-hidden="true"><use href="#i-star"/></svg><svg class="h-4 w-4 fill-current lg:h-[18px] lg:w-[18px]" aria-hidden="true"><use href="#i-star"/></svg>
+        </div>
+        <blockquote class="my-3 text-base text-[#2E2E2B] lg:my-4 lg:text-[17px]">“Cocok untuk kuliner malam dan nongkrong bareng teman.”</blockquote>
+        <figcaption class="flex items-center gap-3">
+          <span class="flex h-10 w-10 items-center justify-center rounded-full bg-ph text-sm font-bold text-soft lg:h-11 lg:w-11" aria-hidden="true">AR</span>
+          <span><span class="block text-[15px] font-bold lg:text-base">Azril Rojaan</span><span class="block text-[13px] text-soft lg:text-sm">ITB, Bandung</span></span>
+        </figcaption>
+      </figure>
+    </li>
+  </ul>
+  <p class="mx-auto mt-5 max-w-[1200px] px-5 text-xs text-soft lg:px-10 lg:text-center">Angka dan testimoni di halaman ini bersifat ilustrasi untuk keperluan tugas kuliah.</p>
+</section>
+
+<!-- 05 FEATURE LIST -->
+<section id="fitur" class="bg-white py-14 lg:py-[88px]">
+  <div class="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-8 px-5 lg:grid-cols-2 lg:gap-16 lg:px-10">
+    <img src="img/menu-restoran.jpg" width="552" height="544" loading="lazy" alt="Buku menu restoran terbuka yang menampilkan daftar makanan lengkap dengan foto dan harga" class="order-2 aspect-[350/240] w-full rounded-[14px] object-cover lg:order-1 lg:aspect-auto lg:h-[560px] lg:rounded-2xl">
+    <div class="order-1 lg:order-2">
+      <span class="tag">Fitur</span>
+      <h2 class="mt-3.5 text-[28px] font-extrabold leading-[1.18] tracking-[-0.02em] lg:mt-4 lg:text-[40px] lg:leading-[1.15]">Semua yang Kamu Butuhkan Sebelum Berangkat</h2>
+      <ul class="mt-6 space-y-5 lg:mt-7 lg:space-y-[22px]">
+        <li class="flex gap-3.5 lg:gap-4"><span class="icon-box h-10 w-10 rounded-[10px] lg:h-11 lg:w-11"><svg class="h-5 w-5 fill-none stroke-current lg:h-[22px] lg:w-[22px]" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-tag"/></svg></span><div><h3 class="font-bold lg:text-lg">Filter budget Rp25.000–Rp50.000</h3><p class="text-[15px] text-muted lg:text-base">Tampilkan hanya tempat yang sesuai uang saku bulananmu.</p></div></li>
+        <li class="flex gap-3.5 lg:gap-4"><span class="icon-box h-10 w-10 rounded-[10px] lg:h-11 lg:w-11"><svg class="h-5 w-5 fill-none stroke-current lg:h-[22px] lg:w-[22px]" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-map"/></svg></span><div><h3 class="font-bold lg:text-lg">Peta dan jarak terdekat</h3><p class="text-[15px] text-muted lg:text-base">Urutkan dari kampus, kos, atau lokasi aktivitasmu, lengkap dengan arah jalan.</p></div></li>
+        <li class="flex gap-3.5 lg:gap-4"><span class="icon-box h-10 w-10 rounded-[10px] lg:h-11 lg:w-11"><svg class="h-5 w-5 fill-none stroke-current lg:h-[22px] lg:w-[22px]" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-clock"/></svg></span><div><h3 class="font-bold lg:text-lg">Jam buka dan status buka</h3><p class="text-[15px] text-muted lg:text-base">Cek buka malam atau 24 jam sebelum kamu keluar rumah.</p></div></li>
+        <li class="flex gap-3.5 lg:gap-4"><span class="icon-box h-10 w-10 rounded-[10px] lg:h-11 lg:w-11"><svg class="h-5 w-5 fill-none stroke-current lg:h-[22px] lg:w-[22px]" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-star"/></svg></span><div><h3 class="font-bold lg:text-lg">Rating, foto menu, dan ulasan terbaru</h3><p class="text-[15px] text-muted lg:text-base">Bandingkan beberapa pilihan tanpa membuka banyak platform.</p></div></li>
+        <li class="flex gap-3.5 lg:gap-4"><span class="icon-box h-10 w-10 rounded-[10px] lg:h-11 lg:w-11"><svg class="h-5 w-5 fill-none stroke-current lg:h-[22px] lg:w-[22px]" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-bag"/></svg></span><div><h3 class="font-bold lg:text-lg">Link pesan-antar GoFood</h3><p class="text-[15px] text-muted lg:text-base">Malas keluar? Langsung pesan dari halaman tempat makannya.</p></div></li>
+      </ul>
+      <p class="mt-7 text-sm font-bold text-soft">Kategori populer</p>
+      <div class="mt-2.5 flex flex-wrap gap-2" role="group" aria-label="Kategori populer">
+        <button type="button" class="chip" data-kategori="Kuliner Malam">Kuliner Malam</button>
+        <button type="button" class="chip" data-kategori="Kaki Lima">Kaki Lima</button>
+        <button type="button" class="chip" data-kategori="Viral dan Hemat">Viral dan Hemat</button>
+        <button type="button" class="chip" data-kategori="Makanan Khas Bandung">Makanan Khas Bandung</button>
+        <button type="button" class="chip" data-kategori="Legendaris">Legendaris</button>
+        <button type="button" class="chip" data-kategori="Buka 24 Jam">Buka 24 Jam</button>
+      </div>
+      <a href="#beranda" id="cta-filter" class="btn btn-primary mt-7 w-full sm:w-auto" data-cta="fitur-filter">Coba Filter Sekarang</a>
+    </div>
+  </div>
+</section>
+
+<!-- 06 FAQ -->
+<section id="faq" class="bg-canvas py-14 lg:py-[88px]">
+  <div class="mx-auto max-w-[820px] px-5 lg:px-10">
+    <div class="lg:text-center">
+      <span class="tag">FAQ</span>
+      <h2 class="mt-3.5 text-[28px] font-extrabold leading-[1.18] tracking-[-0.02em] lg:mt-4 lg:text-[40px] lg:leading-[1.15]">Pertanyaan yang Sering Ditanyakan</h2>
+    </div>
+    <div class="mt-6 border-t border-line lg:mt-10" id="faq-list">
+      <details class="group border-b border-line" open>
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-[18px] text-base font-bold lg:py-[22px] lg:text-lg"><span>Apakah harganya sesuai budget mahasiswa?</span><span class="text-2xl leading-none group-open:hidden" aria-hidden="true">+</span><span class="hidden text-2xl leading-none group-open:inline" aria-hidden="true">−</span></summary>
+        <p class="pb-[18px] text-[15px] text-muted lg:pb-[22px] lg:text-base">Setiap rekomendasi menampilkan kisaran harga, dan kamu bisa memfilter ke Rp25.000–Rp50.000 per sekali makan.</p>
+      </details>
+      <details class="group border-b border-line">
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-[18px] text-base font-bold lg:py-[22px] lg:text-lg"><span>Bagaimana cara menemukan tempat makan terdekat dari kampus atau kos?</span><span class="text-2xl leading-none group-open:hidden" aria-hidden="true">+</span><span class="hidden text-2xl leading-none group-open:inline" aria-hidden="true">−</span></summary>
+        <p class="pb-[18px] text-[15px] text-muted lg:pb-[22px] lg:text-base">Pilih filter “Terdekat”, lalu tentukan titik awalmu, misalnya kampus atau kos. Hasil diurutkan dari yang paling dekat, lengkap dengan peta dan arah jalan.</p>
+      </details>
+      <details class="group border-b border-line">
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-[18px] text-base font-bold lg:py-[22px] lg:text-lg"><span>Apakah ada rekomendasi kuliner malam dan yang buka 24 jam?</span><span class="text-2xl leading-none group-open:hidden" aria-hidden="true">+</span><span class="hidden text-2xl leading-none group-open:inline" aria-hidden="true">−</span></summary>
+        <p class="pb-[18px] text-[15px] text-muted lg:pb-[22px] lg:text-base">Ada. Gunakan kategori “Kuliner Malam” atau “Buka 24 Jam” untuk melihat tempat yang masih buka saat kamu lapar tengah malam.</p>
+      </details>
+      <details class="group border-b border-line">
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-[18px] text-base font-bold lg:py-[22px] lg:text-lg"><span>Seberapa sering harga dan jam buka diperbarui?</span><span class="text-2xl leading-none group-open:hidden" aria-hidden="true">+</span><span class="hidden text-2xl leading-none group-open:inline" aria-hidden="true">−</span></summary>
+        <p class="pb-[18px] text-[15px] text-muted lg:pb-[22px] lg:text-base">Data ditinjau secara berkala dan diperbarui dari ulasan terbaru. Karena harga dan jam buka bisa berubah sewaktu-waktu, cek ulang di halaman tempat makannya sebelum berangkat.</p>
+      </details>
+      <details class="group border-b border-line">
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-[18px] text-base font-bold lg:py-[22px] lg:text-lg"><span>Bisa pesan lewat GoFood?</span><span class="text-2xl leading-none group-open:hidden" aria-hidden="true">+</span><span class="hidden text-2xl leading-none group-open:inline" aria-hidden="true">−</span></summary>
+        <p class="pb-[18px] text-[15px] text-muted lg:pb-[22px] lg:text-base">Bisa. Untuk tempat yang tersedia di GoFood, ada tautan pesan-antar langsung di halaman tempat makannya, jadi kamu tidak perlu mencarinya lagi.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 07 FINAL CTA + FORMULIR -->
+<section id="kontak" class="bg-ink py-14 text-white lg:py-24">
+  <div class="mx-auto grid max-w-[1200px] grid-cols-1 items-start gap-10 px-5 lg:grid-cols-[1fr_520px] lg:gap-16 lg:px-10">
+    <div class="lg:pt-6">
+      <span class="inline-block rounded-full border border-soft px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-[.08em] text-[#D8D8D3]">Minta Rekomendasi</span>
+      <h2 class="mt-5 text-[32px] font-extrabold leading-[1.15] tracking-[-0.03em] lg:text-5xl lg:leading-[1.1]">Berhenti Scroll, Mulai Makan Enak</h2>
+      <p class="mt-4 max-w-[480px] text-base text-[#D8D8D3] lg:text-[19px] lg:leading-relaxed">Rekomendasi kuliner Bandung yang pas di kantong mahasiswa, siap dibuka sekarang. Isi formulir, dan kami kirimkan pilihan yang sesuai budget dan lokasimu.</p>
+      <ul class="mt-6 space-y-3 text-[15px] text-[#D8D8D3]">
+        <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-5 w-5 shrink-0 fill-none stroke-current" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg>Gratis, tanpa perlu membuat akun</li>
+        <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-5 w-5 shrink-0 fill-none stroke-current" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg>Sesuai budget Rp25.000–Rp50.000</li>
+        <li class="flex items-start gap-2.5"><svg class="mt-0.5 h-5 w-5 shrink-0 fill-none stroke-current" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg>Datamu hanya dipakai untuk mengirim rekomendasi</li>
+      </ul>
+      <a href="https://www.google.com/maps/search/kuliner+murah+terdekat" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block text-[15px] text-[#D8D8D3] underline underline-offset-4 hover:text-white" data-cta="cta-terdekat">Atau lihat yang paling dekat dari lokasimu<span class="sr-only"> (buka di Google Maps, tab baru)</span></a>
+    </div>
+
+    <div class="rounded-2xl bg-white p-5 text-ink shadow-card sm:p-8">
+      <form id="form-kontak" name="kontak" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="kontak">
+        <p class="hidden" aria-hidden="true"><label>Jangan diisi: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <h3 class="text-xl font-extrabold lg:text-2xl">Minta rekomendasi tempat makan</h3>
+        <p class="mt-1 text-sm text-muted">Kolom bertanda <span class="text-red-700" aria-hidden="true">*</span><span class="sr-only">bintang</span> wajib diisi.</p>
+
+        <div class="mt-5 space-y-4">
+          <div>
+            <label for="nama" class="mb-1.5 block text-sm font-bold">Nama <span class="text-red-700" aria-hidden="true">*</span></label>
+            <input id="nama" name="nama" type="text" class="field" autocomplete="name" required minlength="2" placeholder="Nama lengkapmu" aria-describedby="err-nama">
+            <p id="err-nama" class="mt-1 hidden text-sm text-red-700" role="alert"></p>
+          </div>
+          <div>
+            <label for="email" class="mb-1.5 block text-sm font-bold">Email <span class="text-red-700" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" class="field" autocomplete="email" required placeholder="nama@email.com" aria-describedby="err-email">
+            <p id="err-email" class="mt-1 hidden text-sm text-red-700" role="alert"></p>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label for="kampus" class="mb-1.5 block text-sm font-bold">Kampus / area</label>
+              <input id="kampus" name="kampus" type="text" class="field" placeholder="Mis. Dago, Setiabudi">
+            </div>
+            <div>
+              <label for="budget" class="mb-1.5 block text-sm font-bold">Budget sekali makan</label>
+              <select id="budget" name="budget" class="field">
+                <option value="Rp25.000–Rp50.000" selected>Rp25.000–Rp50.000</option>
+                <option value="Di bawah Rp25.000">Di bawah Rp25.000</option>
+                <option value="Di atas Rp50.000">Di atas Rp50.000</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="kategori" class="mb-1.5 block text-sm font-bold">Cari yang seperti apa?</label>
+            <select id="kategori" name="kategori" class="field">
+              <option value="Apa saja">Apa saja</option>
+              <option>Kuliner Malam</option>
+              <option>Kaki Lima</option>
+              <option>Viral dan Hemat</option>
+              <option>Makanan Khas Bandung</option>
+              <option>Legendaris</option>
+              <option>Buka 24 Jam</option>
+            </select>
+          </div>
+          <div>
+            <label for="pesan" class="mb-1.5 block text-sm font-bold">Pesan tambahan</label>
+            <textarea id="pesan" name="pesan" rows="3" class="field resize-y" placeholder="Mis. mau makan malam bareng 4 orang, dekat Dago"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" id="kirim" class="btn btn-primary mt-6 w-full lg:!min-h-[56px] lg:!text-[17px]" data-cta="form-kirim">Lihat Rekomendasi Sekarang</button>
+        <p id="status-form" class="mt-4 hidden rounded-[10px] px-4 py-3 text-sm font-semibold" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-line bg-white">
+  <div class="mx-auto flex max-w-[1200px] flex-col gap-4 px-5 py-7 text-sm text-soft lg:flex-row lg:items-center lg:justify-between lg:px-10 lg:py-9">
+    <a href="#beranda" class="flex items-center gap-2.5 font-bold text-ink">
+      <span class="flex h-7 w-7 items-center justify-center rounded-md bg-brand text-white" aria-hidden="true"><svg viewBox="0 0 64 64" class="h-[18px] w-[18px] fill-current"><path d="M20 14v14a6 6 0 0 0 4 5.6V50h4V33.6A6 6 0 0 0 32 28V14h-3v10h-2V14h-3v10h-2V14zM44 14c-4 3-6 8-6 14 0 3 1 5 3 6v16h4V14z"/></svg></span>
+      Rasa Bandung
+    </a>
+    <div class="flex gap-6">
+      <button type="button" id="buka-privasi" class="underline-offset-4 hover:underline">Kebijakan Privasi</button>
+      <a href="#kontak" class="underline-offset-4 hover:underline">Kontak</a>
+    </div>
+    <p>© <span id="tahun">2026</span> Rasa Bandung. Dibuat untuk keperluan tugas kuliah.</p>
+  </div>
+</footer>
+
+<!-- Dialog kebijakan privasi -->
+<dialog id="dlg-privasi" class="w-[min(92vw,520px)] rounded-2xl p-0 text-ink backdrop:bg-black/50" aria-labelledby="judul-privasi">
+  <div class="p-6">
+    <h2 id="judul-privasi" class="text-xl font-extrabold">Kebijakan Privasi</h2>
+    <p class="mt-3 text-[15px] text-muted">Data yang kamu isi pada formulir (nama, email, area, budget, dan pesan) hanya dipakai untuk mengirimkan rekomendasi tempat makan yang kamu minta. Data tidak dijual atau dibagikan kepada pihak lain.</p>
+    <p class="mt-3 text-[15px] text-muted">Halaman ini dibuat sebagai bagian dari tugas kuliah. Kamu dapat meminta datamu dihapus kapan saja lewat formulir kontak.</p>
+    <button type="button" id="tutup-privasi" class="btn btn-primary mt-5 w-full sm:w-auto">Mengerti</button>
+  </div>
+</dialog>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
