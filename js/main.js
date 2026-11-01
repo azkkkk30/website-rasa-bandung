@@ -7,7 +7,7 @@
      - Di GitHub Pages / Vercel / hosting lain: isi dengan endpoint Formspree,
        mis. 'https://formspree.io/f/xxxxxxx'
   ------------------------------------------------------------------ */
-  var FORM_ENDPOINT = '';
+  var FORM_ENDPOINT = 'https://formspree.io/f/mqppyvvb';
   var EMAIL_CADANGAN = ''; // opsional: alamat email yang ditampilkan jika pengiriman gagal
 
   var $ = function (s, r) { return (r || document).querySelector(s); };
@@ -65,7 +65,7 @@
       e.preventDefault();
       var q = $('#cari').value.trim();
       var aktif = chips.filter(function (c) { return c.getAttribute('aria-pressed') === 'true'; })
-                       .map(function (c) { return c.getAttribute('data-chip'); });
+        .map(function (c) { return c.getAttribute('data-chip'); });
       var bagian = [];
       if (q) bagian.push('Saya mencari: ' + q);
       if (aktif.length) bagian.push('Filter: ' + aktif.join(', '));
